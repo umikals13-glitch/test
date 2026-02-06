@@ -71,12 +71,14 @@
 </div>
 
 <script>
+  const music = document.getElementById("bgMusic");
+  music.volume = 0.4;
+  
   function jumpscare() {
     document.body.requestFullscreen?.();
     document.getElementById("scare").style.display = "block";
-    const sound = document.getElementById("sound");
-    sound.currentTime = 0;
-    sound.play();
+    
+    music.play(); //START MUSIC
   }
 </script>
 
